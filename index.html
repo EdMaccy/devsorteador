@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="./assets/icon.png">
+    <title>DevSorteio</title>
+</head>
+
+<body>
+    <img class="logo" src="./assets/devsorteio.png">
+
+    <h2>Sortear um número</h2> 
+    <div>
+        <input placeholder="entre" class="input-min" type="number">
+        <input placeholder="e" class="input-max" type="number">
+    </div>
+
+    <div>
+        <h2>Número sorteado</h2>
+        <span class="number">0</span>
+    </div>
+
+    <button onclick="generateNumber()">Sortear 🎲</button>
+</body>
+<script src="./scripts.js"></script>
+</html>
