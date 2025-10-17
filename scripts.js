@@ -15,11 +15,11 @@ function generateNumber() {
         drawnNumber.innerHTML = random;
         drawnNumber.classList.add("spin");
 
-        // remove animação rapidamente
+      
         setTimeout(() => drawnNumber.classList.remove("spin"), 100);
 
         count++;
-        if (count > 20) { // controla duração da "roleta"
+        if (count > 20) { 
             clearInterval(interval);
             const final = Math.floor(Math.random() * (max - min + 1)) + min;
             drawnNumber.innerHTML = final;
